@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".CourseEnter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:id="@+id/dropdownM"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        android:hint="SEMESTER"
+        app:helperTextEnabled="true"
+        app:helperText="Select the semester you want add the result"
+        app:startIconDrawable="@drawable/ic_semester_24dp"
+        app:startIconContentDescription="Come"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/semester2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textColorLink="#FFFFFF" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/level2"
+        android:layout_width="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="LEVEL"
+        app:startIconDrawable="@drawable/ic_level_24dp"
+        app:startIconContentDescription="LEVEL"
+        app:helperTextEnabled="true"
+        app:helperText="Select Level"
+        app:helperTextTextColor="@color/color"
+        app:errorTextColor="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteViewForLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numberOfCourses"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/colorPrimary"
+        app:counterMaxLength="2"
+        android:hint="NUMBER OF COURSES"
+        app:helperText="How many courses did you offer this semester?"
+        app:helperTextEnabled="true"
+        app:startIconContentDescription="Come">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/coureser"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/secondButton"
+        android:drawableLeft="@drawable/ic_send_black_24dp"
+        android:drawableStart="@drawable/ic_send_black_24dp"
+        android:layout_marginRight="90dp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout></ScrollView>
+
+</LinearLayout>
+</ScrollView>
